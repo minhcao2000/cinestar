@@ -1,0 +1,143 @@
+
+POST http://localhost:8004/movie/showsOfMovie
+Content-Type: application/json
+
+{
+    "movieId": "66093ea52e98bf6dda3f6b47"
+}
+
+###
+GET http://localhost:8004/movie/currentMovies
+
+###
+POST http://localhost:8004/movie/showsOfMovie
+Content-Type: application/json
+
+{
+    "movieId": "66486a6b0af37b46feed2112"
+}
+
+###
+POST http://localhost:8004/seat/addSeat
+Content-Type: application/json
+
+{
+    "Row_index": "A",
+    "Col_index": 1,
+    "Room_number": 2,
+    "State" : "False",
+    "Show_ref": "664887880af37b46feed211b"
+}
+
+###
+POST http://localhost:8004/seat/addSeat
+Content-Type: application/json
+
+{
+    "Row_index": "B",
+    "Col_index": 1,
+    "Room_number": 2,
+    "State" : "False",
+    "Show_ref": "664887880af37b46feed211b"
+}
+
+###
+POST http://localhost:8004/seat/addSeat
+Content-Type: application/json
+
+{
+    "Row_index": "C",
+    "Col_index": 1,
+    "Room_number": 2,
+    "State" : "False",
+    "Show_ref": "664887880af37b46feed211b"
+}
+
+###
+POST http://localhost:8004/seat/addSeat
+Content-Type: application/json
+
+{
+    "Row_index": "D",
+    "Col_index": 1,
+    "Room_number": 2,
+    "State" : "False",
+    "Show_ref": "664887880af37b46feed211b"
+}
+
+###
+POST http://localhost:8004/seat/addSeat
+Content-Type: application/json
+
+{
+    "Row_index": "E",
+    "Col_index": 1,
+    "Room_number": 2,
+    "State" : "False",
+    "Show_ref": "664887880af37b46feed211b"
+}
+
+###
+POST http://localhost:8004/seat/addSeat
+Content-Type: application/json
+
+{
+    "Row_index": "F",
+    "Col_index": 1,
+    "Room_number": 1,
+    "State" : "False",
+    "Show_ref": "664887880af37b46feed211b"
+}
+
+###
+POST http://localhost:8004/seat/addSeat
+Content-Type: application/json
+
+{
+    "Row_index": "G",
+    "Col_index": 1,
+    "Room_number": 1,
+    "State" : "False",
+    "Show_ref": "664887880af37b46feed211b"
+}
+
+
+###
+POST http://localhost:8004/seat/allSeats
+Content-Type: application/json
+
+{
+   
+    "Show_ref": "664886c30af37b46feed2119"
+}
+
+###
+POST http://localhost:8004/ticket/addTicket
+Content-Type: application/json
+
+{
+   
+    "User_ID": "66478bd8444fde42a86317b3",
+    "Seat_IDs": ["66478163c02bd1b5cfad3483", "66478176c02bd1b5cfad3485"]
+}
+
+###
+GET http://192.168.1.82:8004/ticket/allTickets
+
+###
+POST http://192.168.1.33:8004/auth/login
+Content-Type: application/json
+
+{
+    "Username": "MinhCao",
+    "Password": "MinhCao"
+}
+
+###
+POST http://localhost:8004/auth/userInfo
+
+Content-Type: application/json
+
+{
+    "Username": "MinhCao"
+}
