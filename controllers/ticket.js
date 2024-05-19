@@ -26,8 +26,16 @@ module.exports.addTicket = async (req, res, next) => {
 
 module.exports.getAllTickets = async (req, res, next) => {
     try {
-        const tickets = await Ticket.find({})
-
+        const { User_ID } = req.body
+        const tickets = await Ticket.find({ User_ID }).populate({
+            path: "Seat_IDs", populate: {
+                path: 'Show_ref',
+                populate: {
+                    path: "Movie"
+                }
+            }
+        })
+        
         return res.json({
             status: true,
             tickets

@@ -122,7 +122,12 @@ Content-Type: application/json
 }
 
 ###
-GET http://192.168.1.82:8004/ticket/allTickets
+POST http://localhost:8004/ticket/allTickets
+Content-Type: application/json
+
+{
+    "User_ID" : "664895115e85397160f66d7d"
+}
 
 ###
 POST http://192.168.1.33:8004/auth/login
@@ -134,10 +139,10 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:8004/auth/userInfo
-
+POST http://localhost:8004/auth/login
 Content-Type: application/json
 
 {
-    "Username": "MinhCao"
+    "Username": "CaoMinh",
+    "Password": "CaoMinh"
 }

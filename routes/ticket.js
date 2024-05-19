@@ -5,7 +5,7 @@ const {
 
 const router = require("express").Router()
 
-router.get('/allTickets', getAllTickets)
+router.post('/allTickets', getAllTickets)
 router.post('/addTicket', addTicket)
 
 router.use((err, req, res, next) => {
